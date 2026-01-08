@@ -1,0 +1,12 @@
+(library
+ (name blackjack)
+ (instrumentation (backend bisect_ppx))
+ (libraries unix))
+
+(rule
+ (with-stdout-to
+  cards.ml
+  (progn
+  (echo "let cards = {|")
+  (cat cards.txt)
+  (echo "|}"))))

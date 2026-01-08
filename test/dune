@@ -1,0 +1,16 @@
+(test
+ (name test_card)
+ (libraries ounit2 blackjack qcheck))
+
+(test
+ (name test_deck)
+ (libraries ounit2 blackjack qcheck))
+
+(test
+ (name test_player)
+ (libraries ounit2 blackjack))
+
+(test
+ (name test_game)
+ (libraries ounit2 blackjack str))
+

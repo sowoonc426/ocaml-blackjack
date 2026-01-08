@@ -1,0 +1,97 @@
+78bb68f | Ben Koppe | 2024-12-02 | Wrote ocamldoc comments for interfaces
+8a794dc | Ben Koppe | 2024-12-02 | Rework `Player` compilation unit to use init function and predictable interface
+e308754 | Ben Koppe | 2024-12-02 | Add interface to HandGroup
+816d245 | Ben Koppe | 2024-12-02 | Wrote shadowing tests
+6d9003b | Ben Koppe | 2024-12-02 | Remove old commented game tests
+b5cc9e6 | Ben Koppe | 2024-12-02 | Implement shadowing
+d1bb78e | Ben Koppe | 2024-12-02 | Add rules printout
+21c2c92 | Ben Koppe | 2024-12-02 | Add additional game test cases for other situations
+a0b1e48 | Ben Koppe | 2024-12-02 | Add test for additional split fail condition
+1579908 | Ben Koppe | 2024-12-02 | Name QCheck tests and use alternate shuffle function for variety
+3e1b5ae | Ben Koppe | 2024-12-02 | Remove unused function
+39434f9 | Ben Koppe | 2024-12-02 | Disable coverage on cases that should be unreachable
+5d7a31f | Ben Koppe | 2024-12-02 | Fix typo and misordered dealt cards on dealer init
+9866575 | Ben Koppe | 2024-12-02 | Remove unused functions
+56da80f | Ben Koppe | 2024-12-01 | Fix failing test from improperly called function
+ecea961 | Ben Koppe | 2024-12-01 | Add betting and segment `Hand` into its own compilation unit
+4f93b40 | Ben Koppe | 2024-12-01 | Rework test cases to use new standardized format
+8c88188 | Ben Koppe | 2024-12-01 | Rework game logic to use centralized game.ml, removing all old code in main.ml and dealer compilation unit
+aa8eb50 | Ben Koppe | 2024-11-30 | Changed functions to take in hands, not players
+e5b3470 | Ben Koppe | 2024-11-30 | Create HandGroup for containing multiple hands
+4b5314e | sc2799 | 2024-11-30 | Merge branch 'main' of github.coecis.cornell.edu:bek76/3110-final-project
+45fdf4c | sc2799 | 2024-11-30 | Edited game and added more test cases to test_game
+e18bb99 | Dorothy Hua | 2024-11-30 | Added more tests for dealer for coverage
+570fe1b | Dorothy Hua | 2024-11-30 | Fixed comments for dealer test cases
+6f130d6 | Dorothy Hua | 2024-11-30 | Merge branch 'main' of github.coecis.cornell.edu:bek76/3110-final-project
+15a72b4 | Dorothy Hua | 2024-11-30 | Added unit tests for Dealer compilation unit
+2ab0084 | Ben Koppe | 2024-11-30 | Replace file dependency with a string that is split by spaces
+54299a5 | Ben Koppe | 2024-11-30 | Reformat and make dealer type public
+5394900 | Dorothy Hua | 2024-11-30 | Fixed dealer compilation unit and removed functions from player compilation unit
+3f9f305 | Ben Koppe | 2024-11-30 | Add tests for 100% coverage of card
+f0c4e97 | Ben Koppe | 2024-11-30 | Add tests for 100% coverage of deck
+28e102a | Ben Koppe | 2024-11-30 | Add Empty exception
+81fe699 | Ben Koppe | 2024-11-30 | Remove line break in instrumentation
+686e331 | Ben Koppe | 2024-11-30 | Move all_possibilities_string to central location in Card compilation unit
+e4fa6db | Ben Koppe | 2024-11-30 | Add qcheck library and data/ folder
+d2d7e79 | Ben Koppe | 2024-11-30 | Remove incorrect calculate_hand_value function
+907b4f0 | Ben Koppe | 2024-11-30 | Remove is_ace function
+92b9cab | Ben Koppe | 2024-11-30 | Add _coverage/ to gitignore
+fc1c128 | Ben Koppe | 2024-11-30 | Add bisect_ppx instrumentation
+b38a003 | Ben Koppe | 2024-11-30 | Fix dealer logic for aces
+11ee6e5 | Dorothy Hua | 2024-11-20 | Adjusted the dealer_play function to use contains_high_ace
+5b458b6 | Ben Koppe | 2024-11-20 | Fix problems in value_card tests and add new tests for contains_high_ace
+5f864d0 | Ben Koppe | 2024-11-20 | Fix problems with value_cards and add contains_high_ace to check if a high ace exists
+6c68211 | Dorothy Hua | 2024-11-20 | Made Dealer compilation unit
+105a715 | sc2799 | 2024-11-20 | Merge branch 'main' of github.coecis.cornell.edu:bek76/3110-final-project
+23e0e0d | sc2799 | 2024-11-20 | Added test case for game - test case for split scenario - edited game.ml accordingly
+15b9990 | Ben Koppe | 2024-11-20 | Fix merge conflict
+7735e44 | Ben Koppe | 2024-11-10 | Include a number of test cases for the new card valuing function
+95f0ab8 | Dorothy Hua | 2024-11-20 | Implement shuffle function and add test cases
+0bd2b6e | sc2799 | 2024-11-10 | Added split and double_down to game loop - still need to implement test cases for game loop
+9f9d403 | sc2799 | 2024-11-10 | Implemented split and double-down in player - functions that asks if player wants to split or double down - acts according to what player answers - added test cases for both functions
+32fe74d | sc2799 | 2024-11-10 | Merge branch 'main' of github.coecis.cornell.edu:bek76/3110-final-project
+98c418f | sc2799 | 2024-11-10 | Implemented split and double_down functions - both functions asks player if they wish to split or double down - carrys on as instructions - tests for both functions added and pass
+181254a | Ben Koppe | 2024-11-10 | Fixed `deck.init` to now be a function that returns a new mutable reference each time
+17040b9 | Ben Koppe | 2024-11-10 | Fix test to check for correct value with ace and 10
+1ed4bcb | Ben Koppe | 2024-11-10 | Fix bug with ask_hit function that considered a value of 21 to be an ended game
+af67b32 | Ben Koppe | 2024-11-10 | Replace deck init value with function that takes unit input
+63cb530 | Ben Koppe | 2024-11-10 | Add validation for RI on `Number` value possibility
+07e5735 | Ben Koppe | 2024-11-10 | Count aces as either 11 or 10 depending on thier value, and fix face card values
+34a284b | Ben Koppe | 2024-10-29 | Add specific commands to INSTALL.md installation
+205d29a | Ben Koppe | 2024-10-29 | Reformat AUTHORS.md to match format given in assignments
+7af8043 | dh697 | 2024-10-29 | Create INSTALL.md
+467dce8 | dh697 | 2024-10-29 | Created AUTHORS.md
+dcfa087 | Dorothy Hua | 2024-10-29 | Write main driver for Blackjack game
+9b5bc90 | Ben Koppe | 2024-10-27 | Add deck testing functions
+4c58596 | Ben Koppe | 2024-10-27 | Refactor card tests to use more general functions
+5245ede | sc2799 | 2024-10-27 |  Please enter the commit message for your changes. Lines starting
+7da141d | Dorothy Hua | 2024-10-27 | Fixed differences of pushed files
+01f871b | sc2799 | 2024-10-27 | Merge branch 'main' of github.coecis.cornell.edu:bek76/3110-final-project
+f8832c9 | Dorothy Hua | 2024-10-27 | Add unit tests for Player module and update Card module's mli file
+729bf27 | sc2799 | 2024-10-27 | Create test suite for game - created make_test and test functions for each function of game - assumed ace = 1 for now - edited game.ml according to the test cases
+e897de4 | Dorothy Hua | 2024-10-27 | Add unit tests for Player module and update Card module's mli file
+e41a12c | Ben Koppe | 2024-10-27 | Make `suite`, `value`, and `make` public in the `mli` file
+3aac800 | Ben Koppe | 2024-10-27 | Add test for all card possibilities
+00d0efa | Ben Koppe | 2024-10-27 | Add documentation for `Card.string`
+9bcb9b0 | sc2799 | 2024-10-27 | Finished game loop in game - remove hand type in game to match with player - edited functions to work with player - finished game_loop and created start_game to intialize game
+117112a | Dorothy Hua | 2024-10-27 | Moved hand from game module to player module
+6b8417b | sc2799 | 2024-10-27 | Created game_loop function - creates the game_loop - error with player.hand (can't figure out why yet)
+4b7fb7f | Dorothy Hua | 2024-10-27 | Broke up the test directory into multiple test files
+f88d7d3 | Ben Koppe | 2024-10-27 | Make deck mutable
+3bee906 | sc2799 | 2024-10-27 | Merge branch 'main' of github.coecis.cornell.edu:bek76/3110-final-project
+b4a5dac | sc2799 | 2024-10-27 | Added functions to game - added function that deals dec - function that prints hand - function that determines winner based on current hand
+aeb07f3 | Dorothy Hua | 2024-10-27 | Add two functions and update documentation to player module
+ad3a6e7 | sc2799 | 2024-10-27 | Edited game to included functions - added function that asks if user want to hit - added function that determines winner (subject to change)
+45c9dfe | Dorothy Hua | 2024-10-27 | add player and dealer types with core functions
+83a44b6 | Ben Koppe | 2024-10-27 | Rename `Card` and `Deck` compilation units to use lowercase in file names
+f4ced2b | Ben Koppe | 2024-10-27 | Add `Deck` compilation unit
+082cf47 | Ben Koppe | 2024-10-27 | Add `all_possibilities` to `Card` unit
+b74dbbe | sc2799 | 2024-10-27 | Created game.ml - implements simple value calculator
+88b88de | Ben Koppe | 2024-10-27 | Add autogenerated `opam` file
+471d6da | Ben Koppe | 2024-10-27 | Add `Card` compilation unit
+869788e | Ben Koppe | 2024-10-27 | Add `dune` and `.ocamlformat` files from homeworks
+c3819fb | Ben Koppe | 2024-10-27 | Project creation
+25d276a | sc2799 | 2024-10-06 | added my name
+f33c6ec | Dorothy Hua | 2024-10-06 | dorothy's name and netid commit
+435cb14 | bek76 | 2024-10-06 | add team members section to README
+8395073 | Ben Koppe | 2024-10-06 | first commit
